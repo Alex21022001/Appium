@@ -1,7 +1,8 @@
-package org.example.testing.pages;
+package org.example.testing.pages.calculator;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import org.example.testing.pages.BasePage;
 
 public class CalculatorPage extends BasePage {
     public CalculatorPage() {
@@ -14,7 +15,6 @@ public class CalculatorPage extends BasePage {
     private MobileElement equalButton;
     @AndroidFindBy(id = "com.google.android.calculator:id/result_final")
     private MobileElement results;
-
     private MobileElement getNumberButton(String number) {
         MobileElement numberButton = driver.findElementById("com.google.android.calculator:id/digit_" + number);
         return numberButton;

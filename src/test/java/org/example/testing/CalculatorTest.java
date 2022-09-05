@@ -1,7 +1,7 @@
 package org.example.testing;
 
 
-import org.example.testing.pages.CalculatorPage;
+import org.example.testing.pages.calculator.CalculatorPage;
 import org.example.testing.utils.TestListener;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

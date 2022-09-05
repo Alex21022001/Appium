@@ -14,9 +14,9 @@ public class CapabilitiesConfiguration {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(UDID,ConfigReader.getConfigReader().udid());
         capabilities.setCapability(AVD,ConfigReader.getConfigReader().deviceName());
-        capabilities.setCapability(APP_PACKAGE,ConfigReader.getConfigReader().appPackage());
-        capabilities.setCapability(APP_ACTIVITY,ConfigReader.getConfigReader().appActivity());
-        capabilities.setCapability(APP,new File(ConfigReader.getConfigReader().appPath()).getAbsolutePath());
+//        capabilities.setCapability(APP_PACKAGE,ConfigReader.getConfigReader().appPackage());
+//        capabilities.setCapability(APP_ACTIVITY,ConfigReader.getConfigReader().appActivity());
+//        capabilities.setCapability(APP,new File(ConfigReader.getConfigReader().appPath()).getAbsolutePath());
 
         return capabilities;
     }
